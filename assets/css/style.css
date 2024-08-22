@@ -16,8 +16,13 @@ body{
 
 
 /* common style */
-.common-paragraph {
+.common-paragraph-light {
     color: rgb(115, 115, 115);
+    font-size: 1rem;
+    font-weight: 500;
+}
+.common-paragraph-dark {
+    color: rgb(73, 73, 73);
     font-size: 1rem;
     font-weight: 500;
 }
@@ -25,7 +30,8 @@ body{
 .common-title {
     color: rgb(33, 33, 33);
     font-size: 2.5rem;
-    font-weight: 700;
+    font-weight: 800;
+    line-height: 55px;
 }
 
 .common-subtitle {

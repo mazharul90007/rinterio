@@ -12,8 +12,9 @@
 </head>
 
 <body>
-    <header class="">
-        <nav class="xl:w-[90%] w-[98%] mx-auto">
+    <header class="w-[90%] mx-auto">
+        <!-- navbar part html start -->
+        <nav class="">
             <div class="navbar">
                 <!-- left part -->
                 <div class="navbar-start">
@@ -35,13 +36,13 @@
                 <!-- right part -->
                 <div class="navbar-end">
                     <div class="md:flex gap-4 hidden md:block">
-                        <div class="flex justify-center items-center">
+                        <div class="flex justify-center items-center cursor-pointer">
                             <img class="p-3 bg-white rounded-full " src="assets/images/search.svg" alt="">
                         </div>
-                        <div class="flex justify-center items-center">
+                        <div class="flex justify-center items-center cursor-pointer">
                             <img class="p-3 bg-white rounded-full " src="assets/images/cart.svg" alt="">
                         </div>
-                        <div class="flex items-center bg-[#abef5f] px-5 py-3 gap-1 rounded-[32px]">
+                        <div class="flex items-center bg-[#abef5f] px-5 py-3 gap-1 rounded-[32px] cursor-pointer">
                             <p class="font-extrabold text-xl text-[#1c1c1c]">Book Consult</p>
                             <img src="assets/images/arrowUpBlack.svg" alt="">
                         </div>
@@ -52,18 +53,162 @@
                             <img src="assets/images/hamburger.svg" alt="">
                         </div>
                         <ul tabindex="0"
-                            class="menu  dropdown-content bg-base-100 rounded-box z-[1] mt-3 p-2 shadow">
-                            <li><a>Item 1</a></li>
-                            <li><a>Parent</a></li>
-                            <li><a>Item 3</a></li>
+                            class="menu  dropdown-content bg-base-100/75 rounded-box z-[1] mt-2 p-1 shadow">
+                            <li><a class="font-extrabold text-[#494949]">Home</a></li>
+                            <li><a>Services</a></li>
+                            <li><a>Portfolio</a></li>
+                            <li><a>Blogs</a></li>
+                            <li><a>Contact Us</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </nav>
+        <!-- navbar part html end -->
+        <section>
+            <div class="banner text-center pb-12 md:pb-24">
+                <div class="banner-img-container flex justify-center">
+                    <img src="assets/images/banner.png" alt="">
+                </div>
+                <div class="banner-description flex flex-col gap-6">
+                    <h2 class="md:text-5xl text-3xl font-extrabold xl:px-36">A barn house of this design has a striking
+                        appearance</h2>
+                    <p class="common-paragraph-dark  xl:px-36">The barn house captivates with its blend of rustic charm
+                        and
+                        modern
+                        sophistication, featuring
+                        weathered wood, sleek metal accents, and large windows that flood the space with natural light.
+                    </p>
+
+                    <div
+                        class="inline-flex mx-auto flex items-center bg-[#d4f6ae] px-3 py-2 md:px-5 md:py-3 gap-1 rounded-[32px]">
+                        <p class="font-extrabold md:text-xl text-[#1c1c1c]">View Details</p>
+                        <img src="assets/images/arrowUp.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
     </header>
     <main>
+        <!-- Liveable Space part html start -->
+        <section class="bg-[#f4f4f4] pb-12 md:pb-24">
+            <div class="liveable-space w-[90%] mx-auto xl:flex gap-8">
+                <div
+                    class="liveable-space-description xl:w-1/2 flex items-center xl:items-start text-center md:text-start flex-col gap-4 xl:gap-6 items-start pb-4">
 
+                    <div class="md:inline-flex flex items-center bg-white px-4 py-2 gap-2 rounded-[32px]">
+                        <img class="h-fit" src="assets/images/arrow-right.svg" alt="">
+                        <p class="font-bold text-[1rem] text-[#1c1c1c]">About Us</p>
+                    </div>
+                    <h3 class="common-title">We design thoughtful, liveable spaces</h3>
+                    <p class="common-paragraph-dark">The barn house captivates with its blend of rustic charm and
+                        modern sophistication, featuring weathered wood, sleek metal accents.
+                    </p>
+                    <div class="card-container flex flex-col md:flex-row xl:flex-col gap-4">
+                        <!-- card 01 -->
+                        <div class="flex gap-6 p-6 bg-white rounded-2xl">
+                            <div class="card-image-container">
+                                <img src="assets/images/commercial.png" alt="">
+                            </div>
+                            <div class="card-description text-start">
+                                <h5 class="common-subtitle">Commercial</h5>
+                                <p class="common-paragraph-light">The barn house captivates with its blend of rustic
+                                    charm
+                                    and modern.</p>
+
+                            </div>
+                        </div>
+                        <!-- card 02 -->
+                        <div class="flex gap-6 p-6 bg-white rounded-2xl">
+                            <div class="card-image-container">
+                                <img src="assets/images/residential.png" alt="">
+                            </div>
+                            <div class="card-description text-start">
+                                <h5 class="common-subtitle">Residential</h5>
+                                <p class="common-paragraph-light">The barn house captivates with its blend of rustic
+                                    charm
+                                    and modern.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="liveable-space-image xl:w-1/2 w-full">
+                    <img class="object-cover" src="assets/images/Rectangle.png" alt="">
+                </div>
+
+            </div>
+        </section>
+        <!-- Liveable part html end -->
+        <!-- Work Process part html start -->
+        <section>
+            <div class="work-process w-[90%] mx-auto flex flex-col gap-7 items-center pb-12 md:pb-24">
+                <div class="inline-flex flex items-center bg-white px-4 py-2 gap-2 rounded-[32px]">
+                    <img src="assets/images/arrow-right.svg" alt="">
+                    <p class="font-bold text-[1rem] text-[#1c1c1c]">How we works</p>
+                </div>
+                <h3 class="common-title p-0">Our Works Process</h3>
+                <p class="common-paragraph-dark md:mx-36">
+                    The barn house captivates with its blend of rustic charm and modern sophistication, featuring
+                    weathered wood, sleek metal accents.
+                </p>
+                <div class="card-container flex flex-col md:flex-row gap-4">
+                    <!-- card 01 -->
+                    <div class="card-container">
+                        <div class="card p-8 flex flex-col gap-3 bg-[#e7c1d3]">
+                            <div class="card-img">
+                                <img src="assets/images/concept.png" alt="">
+                            </div>
+                            <h2 class="card-title">Concept</h2>
+                            <p class="common-paragraph-dark">The barn house captivates with its blend of rustic charm
+                                and modern.</p>
+                            <div class="card-actions justify-end">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 02 -->
+                    <div class="card-container ">
+                        <div class="card p-8 flex flex-col gap-3 bg-[#efda6e]">
+                            <div class="card-img">
+                                <img src="assets/images/flow-chart.png" alt="">
+                            </div>
+                            <h2 class="card-title">Design Process</h2>
+                            <p class="common-paragraph-dark">The barn house captivates with its blend of rustic charm
+                                and modern.</p>
+                            <div class="card-actions justify-end">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 03 -->
+                    <div class="card-container ">
+                        <div class="card p-8 flex flex-col gap-3 bg-[#a3dac4]">
+                            <div class="card-img">
+                                <img src="assets/images/vision.png" alt="">
+                            </div>
+                            <h2 class="card-title">Supervision </h2>
+                            <p class="common-paragraph-dark">The barn house captivates with its blend of rustic charm
+                                and modern.</p>
+                            <div class="card-actions justify-end">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 04 -->
+                    <div class="card-container ">
+                        <div class="card p-8 flex flex-col gap-3 bg-[#77aaea]">
+                            <div class="card-img">
+                                <img src="assets/images/budget-planning.png" alt="">
+                            </div>
+                            <h2 class="card-title">Budget Planning</h2>
+                            <p class="common-paragraph-dark">The barn house captivates with its blend of rustic charm
+                                and modern.</p>
+                            <div class="card-actions justify-end">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Work Process part html end -->
     </main>
     <footer>
 
