@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+.font-manrope {
+    font-family: "Manrope", sans-serif;
+}
+
+* {
+    font-family: "Manrope", sans-serif;
+    padding: 0;
+    margin: 0;
+    
+}
+body{
+    background-color: #f4f4f4;
+}
+
+
+/* common style */
+.common-paragraph {
+    color: rgb(115, 115, 115);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.common-title {
+    color: rgb(33, 33, 33);
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.common-subtitle {
+    color: rgb(73, 73, 73);
+    font-size: 20px;
+    font-weight: 800;
+}
