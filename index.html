@@ -91,7 +91,7 @@
     <main>
         <!-- Liveable Space part html start -->
         <section class="bg-[#f4f4f4] py-16 md:pb-24 relative">
-            <div class="liveable-space w-[90%] mx-auto xl:flex gap-8">
+            <div class="liveable-space flex flex-col w-[90%] mx-auto xl:flex-row gap-8">
                 <div
                     class="liveable-space-description xl:w-1/2 flex xl:justify-around xl:items-start text-center md:text-start flex-col gap-4 xl:gap-6 items-start ">
 
@@ -136,7 +136,7 @@
                     </div>
                 </div>
                 <div class="liveable-space-image xl:w-1/2 w-full object-">
-                    <img class="h-full" src="assets/images/Rectangle.png" alt="">
+                    <img class="xl:h-full h-96 w-full" src="assets/images/Rectangle.png" alt="">
                 </div>
 
             </div>
@@ -146,7 +146,7 @@
         <!-- Work Process part html start -->
         <section class="bg-[#f4f4f4]">
             <div class="work-process w-[90%] mx-auto flex flex-col gap-7 items-center pb-12 md:pb-24">
-                <div class="inline-flex flex items-center bg-white px-4 py-2 gap-2 rounded-[32px] cursor-pointer">
+                <div class="inline-flex items-center bg-white px-4 py-2 gap-2 rounded-[32px] cursor-pointer">
                     <img src="assets/images/arrow-right.svg" alt="">
                     <p class="font-bold text-[1rem] text-[#1c1c1c]">How we works</p>
                 </div>
@@ -155,7 +155,7 @@
                     We provide wide-ranging and complete design services beginning with an initial design concept
                     through installation and detailing of final design rudiments to complete the project.
                 </p>
-                <div class="card-container flex flex-col md:flex-row gap-4">
+                <div class="card-container grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4">
                     <!-- card 01 -->
                     <div class="card p-8 flex flex-col gap-3 bg-[#e7c1d3]">
                         <div class="card-img">
@@ -221,10 +221,10 @@
                     Be it new construction or a large-scale renovation, we work with clients to give life to the ideal
                     version of their home. We offer full design and specification services
                 </p>
-                <div class="LP-card-container w-full grid grid-cols-1 xl:grid-cols-12 gap-4">
+                <div class="LP-card-container w-full grid md:grid-cols-12 gap-4">
                     <!------------------------ Row 01 ------------------------>
                     <!-- card 01 -->
-                    <div class="xl:col-span-8 xl:flex gap-4 border border-gray-300 p-4 rounded-2xl">
+                    <div class="md:col-span-12 xl:col-span-8 flex flex-col md:flex-row gap-4 border border-gray-300 p-4 rounded-2xl">
                         <div class="card-img-container w-full">
                             <img class="h-full w-full" src="assets/images/img1.png" alt="">
                         </div>
@@ -240,16 +240,16 @@
                         </div>
                     </div>
                     <!-- card 02 -->
-                    <div class="xl:col-span-4 border border-gray-300 p-4 rounded-2xl">
+                    <div class=" md:col-span-6 xl:col-span-4 border border-gray-300 p-4 rounded-2xl">
                         <img class="h-full w-full" src="assets/images/img2.png" alt="">
                     </div>
                     <!------------------------- Row 02 ------------------------->
                     <!-- card 03 -->
-                    <div class="xl:col-span-3 border border-gray-300 p-4 rounded-2xl">
+                    <div class="md:col-span-6 xl:col-span-3 border border-gray-300 p-4 rounded-2xl">
                         <img class="h-full w-full" src="assets/images/img3.png" alt="">
                     </div>
                     <!-- card 04 -->
-                    <div class="xl:col-span-6 flex flex-col xl:flex-row gap-4 border border-gray-300 p-4 rounded-2xl">
+                    <div class="md:col-span-12 xl:col-span-6 flex flex-col md:flex-row gap-4 border border-gray-300 p-4 rounded-2xl">
                         <div class="card-img-container w-full">
                             <img class="h-full w-full" src="assets/images/img4.png" alt="">
                         </div>
@@ -264,8 +264,12 @@
                         </div>
                     </div>
                     <!-- card 05 -->
-                    <div class="xl:col-span-3 border border-gray-300 p-4 rounded-2xl">
+                    <div class=" md:col-span-6 xl:col-span-3 border border-gray-300 p-4 rounded-2xl">
                         <img class="h-full w-full" src="assets/images/img5.png" alt="">
+                    </div>
+                    <!-- card 06 -->
+                    <div class=" hidden md:block md:col-span-6 xl:hidden border border-gray-300 p-4 rounded-2xl">
+                        <img class="h-full w-full" src="assets/images/img3.png" alt="">
                     </div>
                 </div>
             </div>
@@ -286,11 +290,11 @@
                 </p>
                 <div class="card-container grid grid-cols-1 xl:grid-cols-3 gap-4">
                     <!-- card 01 -->
-                    <div class=" p-6 bg-base-100 rounded-2xl">
-                        <div class="card-img mb-3">
-                            <img class="w-full" src="assets/images/Rectangle2.png" alt="">
+                    <div class="grid grid-cols-12 gap-4 p-6 bg-base-100 rounded-2xl">
+                        <div class="card-img col-span-12 md:col-span-4 xl:col-span-12 mb-3">
+                            <img class="h-full w-full" src="assets/images/Rectangle2.png" alt="">
                         </div>
-                        <div class=" card-description flex flex-col gap-3">
+                        <div class=" card-description col-span-12 md:col-span-8 xl:col-span-12 flex flex-col gap-4">
                             <div class="dateAndAdmin flex gap-4">
                                 <div class="flex gap-1 cursor-pointer">
                                     <img src="assets/images/calendar-03.svg" alt="">
@@ -314,11 +318,11 @@
                         </div>
                     </div>
                     <!-- card 02 -->
-                    <div class=" p-6 bg-base-100 rounded-2xl">
-                        <div class="card-img mb-3">
+                    <div class="grid grid-cols-12 gap-4 p-6 bg-base-100 rounded-2xl">
+                        <div class="ard-img col-span-12 md:col-span-4 xl:col-span-12 mb-3">
                             <img class="w-full" src="assets/images/article2.png" alt="">
                         </div>
-                        <div class=" card-description flex flex-col gap-3">
+                        <div class=" card-description col-span-12 md:col-span-8 xl:col-span-12 flex flex-col gap-4">
                             <div class="dateAndAdmin flex gap-4">
                                 <div class="flex gap-1 cursor-pointer">
                                     <img src="assets/images/calendar-03.svg" alt="">
@@ -342,11 +346,11 @@
                         </div>
                     </div>
                     <!-- card 03 -->
-                    <div class=" p-6 bg-base-100 rounded-2xl">
-                        <div class="card-img mb-3">
+                    <div class="grid grid-cols-12 gap-4 p-6 bg-base-100 rounded-2xl">
+                        <div class="ard-img col-span-12 md:col-span-4 xl:col-span-12 mb-3">
                             <img class="w-full" src="assets/images/article3.png" alt="">
                         </div>
-                        <div class=" card-description flex flex-col gap-3">
+                        <div class=" card-description col-span-12 md:col-span-8 xl:col-span-12 flex flex-col gap-4">
                             <div class="dateAndAdmin flex gap-4">
                                 <div class="flex gap-1 cursor-pointer">
                                     <img src="assets/images/calendar-03.svg" alt="">
@@ -378,11 +382,11 @@
         <section class="py-16">
             <div class="faq-area w-[90%] mx-auto">
                 <h3 class="common-title p-0 text-center pb-8">Get your FAQ answers</h3>
-                <div class="faq-container grid grid-cols-1 xl:grid-cols-12 border border-lime-600 p-7 rounded-2xl">
-                    <div class="faq-img-container w-full xl:col-span-4 flex justify-center">
+                <div class="faq-container grid grid-cols-1 md:grid-cols-12 gap-4 border border-lime-600 p-7 rounded-2xl">
+                    <div class="faq-img-container w-full md:col-span-4 flex justify-center">
                         <img class="h-full" src="assets/images/faq1.png" alt="">
                     </div>
-                    <div class="faq grid grid-cols-1 gap-4 xl:col-span-8">
+                    <div class="faq grid grid-cols-1 gap-4 md:col-span-8">
                         <!-- question 01 -->
                         <div class="collapse collapse-plus bg-base-200 border border-lime-300">
                             <input class="" type="radio" name="my-accordion-3" checked="checked" />
@@ -439,7 +443,7 @@
         <!-- Next Project part html start -->
         <section class="w-full bg-[url('assets/images/bg.jpg')] bg-cover bg-no-repeat pt-24">
             <div
-                class="next-project-heading xl:w-[70%] w-[90%] mx-auto flex flex-col gap-7 items-center mb-1 pb-12 md:pb-24">
+                class="next-project-heading md:w-[70%] w-[90%] mx-auto flex flex-col gap-7 items-center mb-1 pb-12 md:pb-24">
                 <div class="inline-flex  items-center bg-[#d4f6ae] px-4 py-2 gap-2 rounded-[32px] cursor-pointer">
                     <img src="assets/images/arrow-right.svg" alt="">
                     <p class="font-bold text-[1rem] text-[#1c1c1c]">Let's Connect</p>
@@ -450,11 +454,11 @@
                     interior design company. Our goal is to turn your house into a home.
                 </p>
                 <div class="form-field w-full inline-flex flex-col gap-4">
-                    <div class="row-01 grid grid-cols-1 xl:grid-cols-2 gap-4 w-full">
+                    <div class="row-01 grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
                         <input class="px-4 py-3 rounded-full w-full" type="text" placeholder="First Name*">
                         <input class="px-4 py-3 rounded-full w-full" type="text" placeholder="Last Name*">
                     </div>
-                    <div class="row-01 grid grid-cols-1 xl:grid-cols-2 gap-4 w-full">
+                    <div class="row-01 grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
                         <input class="px-4 py-3 rounded-full w-full" type="number" placeholder="Phone Number*">
                         <input class="px-4 py-3 rounded-full w-full" type="email" placeholder="Email Number*">
 
@@ -475,7 +479,7 @@
         <div class="white-line w-full h-2 bg-white"></div>
     </main>
     <footer class="bg-black">
-        <section class=" flex flex-col items-center gap-10 py-20 text-center w-[90%] xl:w-[70%] mx-auto">
+        <section class=" flex flex-col items-center gap-10 py-20 text-center w-[90%] md:w-[70%] mx-auto">
             <div class="flex gap-1 cursor-pointer">
                 <img src="assets/images/arrowUp.svg" alt="">
                 <p class="text-3xl font-extrabold text-white">Rinterio</p>
@@ -484,7 +488,7 @@
                 We carry a unique blend of backgrounds that contribute to unique perspectives and innovative
                 transformations.
             </p>
-            <ul class="flex flex-col xl:flex-row gap-5 xl:gap-16 text-[#e9e9e9]">
+            <ul class="flex flex-col md:flex-row gap-5 md:gap-16 text-[#e9e9e9]">
                 <li><a href="">Home</a></li>
                 <li><a href="">Services</a></li>
                 <li><a href="">Portfolio</a></li>
